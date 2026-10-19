@@ -1,0 +1,34 @@
+.semester-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+.semester-selector__btn {
+  padding: .45rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #c4d4e8;
+  background: #fff;
+  color: #1a3a5c;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .15s;
+}
+.semester-selector__btn:hover:not(:disabled) {
+  background: #ebf3fb;
+  border-color: #2980b9;
+  color: #2980b9;
+}
+.semester-selector__btn--active {
+  background: #2980b9;
+  color: #fff;
+  border-color: #2980b9;
+}
+.semester-selector__btn--active:hover {
+  background: #1a6da0 !important;
+  color: #fff !important;
+}
+.semester-selector__btn--disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}

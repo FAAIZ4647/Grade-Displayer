@@ -1,0 +1,45 @@
+.perf-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1rem;
+}
+.perf-summary__card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.2rem 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,.05);
+  border: 1px solid #e8edf2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: .25rem;
+  transition: transform .2s, box-shadow .2s;
+}
+.perf-summary__card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(41,128,185,.12);
+}
+.perf-summary__icon {
+  font-size: 1.5rem;
+  margin-bottom: .15rem;
+}
+.perf-summary__value {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #1a3a5c;
+  line-height: 1.2;
+}
+.perf-summary__label {
+  font-size: 0.78rem;
+  color: #6b7c93;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+}
+.perf-summary__note {
+  font-size: 0.7rem;
+  color: #e67e22;
+  font-weight: 500;
+  margin-top: .15rem;
+}

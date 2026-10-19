@@ -1,0 +1,77 @@
+.semester-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.semester-page__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.page-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a3a5c;
+  margin: 0 0 .3rem;
+  letter-spacing: .5px;
+}
+.page-subtitle {
+  font-size: 0.9rem;
+  color: #6b7c93;
+  margin: 0;
+}
+.semester-page__meta-bar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #e8edf2;
+  box-shadow: 0 1px 4px rgba(0,0,0,.02);
+}
+.meta-info {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.meta-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #4a6a8a;
+  text-transform: uppercase;
+  letter-spacing: .3px;
+}
+.meta-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a3a5c;
+}
+.alert {
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+.alert--warning {
+  background: #fff8e1;
+  color: #b8860b;
+  border: 1px solid #f0d77a;
+}
+.table-container {
+  margin-top: 1rem;
+}
+.disclaimer-text {
+  font-size: 0.75rem;
+  color: #6b7c93;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .semester-page__header {
+    flex-direction: column;
+  }
+}

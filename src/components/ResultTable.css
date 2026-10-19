@@ -1,0 +1,112 @@
+.result-table__wrapper {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,.05);
+  border: 1px solid #e8edf2;
+  overflow: hidden;
+}
+.result-table__scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 560px;
+}
+.result-table__th {
+  background: linear-gradient(135deg, #1a3a5c, #2471a3);
+  color: #fff;
+  padding: .75rem 1rem;
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: .3px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border-bottom: 2px solid #1a5276;
+}
+.result-table__td {
+  padding: .7rem 1rem;
+  font-size: 0.88rem;
+  color: #2c3e50;
+  border-bottom: 1px solid #edf0f4;
+  vertical-align: middle;
+}
+.result-table__td--center {
+  text-align: center;
+}
+.result-table__td--code {
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+  color: #1a3a5c;
+  white-space: nowrap;
+}
+.result-table__row--even {
+  background: #f7fafc;
+}
+tbody tr:hover {
+  background: #ebf3fb;
+}
+
+/* Grade badges */
+.result-table__grade {
+  display: inline-block;
+  padding: .15rem .55rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: .5px;
+}
+.result-table__grade--S {
+  background: #d4efdf;
+  color: #1a7f37;
+}
+.result-table__grade--Aplus {
+  background: #d6eaf8;
+  color: #1a5276;
+}
+.result-table__grade--A {
+  background: #dce8f5;
+  color: #2471a3;
+}
+.result-table__grade--Bplus {
+  background: #fdebd0;
+  color: #b8860b;
+}
+.result-table__grade--B {
+  background: #fef3e0;
+  color: #c57f17;
+}
+.result-table__grade--C {
+  background: #f5e6d0;
+  color: #8c6d1f;
+}
+.result-table__grade--U {
+  background: #fde8e8;
+  color: #c0392b;
+}
+
+/* Result badges */
+.result-table__result {
+  display: inline-block;
+  padding: .15rem .55rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+.result-table__result--pass {
+  background: #e8f8ee;
+  color: #1a7f37;
+}
+.result-table__result--fail {
+  background: #fde8e8;
+  color: #c0392b;
+}
+.result-table__empty {
+  text-align: center;
+  color: #6b7c93;
+  padding: 2rem;
+}
