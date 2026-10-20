@@ -7,9 +7,11 @@ import Semester2 from "./pages/Semester2";
 import OverallPerformance from "./pages/OverallPerformance";
 import "./App.css";
 
+const basename = import.meta.env.BASE_URL.replace(/\/$/, "") || "/";
+
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <div className="app-container">
         <CollegeHeader />
         
@@ -19,6 +21,7 @@ function App() {
             <Route path="/semester-1" element={<Semester1 />} />
             <Route path="/semester-2" element={<Semester2 />} />
             <Route path="/overall" element={<OverallPerformance />} />
+            <Route path="*" element={<Home />} />
           </Routes>
         </main>
         
